@@ -6,9 +6,10 @@ configMongoose(mongoose, url);
 let userSchema = new Schema({
     name: String,
     job: String,
-    email: String
-}, { 
-    collection : 'users' 
+    email: String,
+    birthdate: Date
+}, {
+    collection : 'users'
 });
 
 export const User = mongoose.model('User', userSchema);

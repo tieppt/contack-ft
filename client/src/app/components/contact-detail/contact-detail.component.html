@@ -1,8 +1,13 @@
 <div class="card">
-  <h4 class="card-header">{{contact.name}}</h4>
+  <h4 class="card-header">{{contact.name | uppercase}}</h4>
   <div class="card-block">
     <p class="card-text">{{contact.job}}</p>
     <p class="card-text">{{contact.email}}</p>
-    <button class="btn btn-danger" (click)="deleteContact(contact)">Delete Contact</button>
+    <p class="card-text">{{contact.birthdate | date}}</p>
+    <div class="text-xs-right">
+      <button class="btn btn-danger" (click)="deleteContact(contact)">Delete Contact</button>
+      <a [routerLink]="['/contacts/edit', contact._id]"
+        class="btn btn-primary">Edit Contact</a>
+    </div>
   </div>
 </div>
