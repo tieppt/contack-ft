@@ -1,8 +1,8 @@
-<div>
-  <h3 class="contact-name">{{contact.name}}</h3>
-  <p>{{contact.job}}</p>
-  <p>{{contact.email}}</p>
-  <p>
+<div class="card">
+  <h4 class="card-header">{{contact.name}}</h4>
+  <div class="card-block">
+    <p class="card-text">{{contact.job}}</p>
+    <p class="card-text">{{contact.email}}</p>
     <button class="btn btn-danger" (click)="deleteContact(contact)">Delete Contact</button>
-  </p>
+  </div>
 </div>
