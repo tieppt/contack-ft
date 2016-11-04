@@ -1,5 +1,8 @@
 <div class="container">
-  <h1>
-    {{title}}
-  </h1>
+  <nav>
+    <a routerLink="/contacts/new" routerLinkActive="active">Create Contact</a>
+    <a routerLink="/contacts" routerLinkActive="active">Contacts</a>
+  </nav>
 </div>
+
+<router-outlet></router-outlet>

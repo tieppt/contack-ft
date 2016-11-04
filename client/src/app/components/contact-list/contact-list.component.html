@@ -1,0 +1,9 @@
+<div class="contact-container container">
+  <h2>List Contact:</h2>
+  <div class="row">
+    <div *ngFor="let contact of contacts" class="col-sm-6 col-md-4">
+      <contact-detail [contact]="contact" (contactDeleted)="deleteContact(contact)">
+      </contact-detail>
+    </div>
+  </div>
+</div>
