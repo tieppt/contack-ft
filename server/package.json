@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-contact-server-for-contact-app",
+  "version": "1.0.0",
+  "description": "A Nodejs Project using ES2015 with Babel Require Hook",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "serve": "nodemon index.js"
+  },
+  "keywords": [
+    "ES2015",
+    "ES6",
+    "nodejs"
+  ],
+  "author": "Tiep Phan",
+  "license": "ISC",
+  "dependencies": {
+    "babel-register": "^6.14.0",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0"
+  }
+}
